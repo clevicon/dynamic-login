@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+.cont-bd {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.cont-bd .blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: black;
+}
+.cont-bd .bacImg img {
+  width: 100%;
+  height: 100vh;
+}
+.cont-bd .main-cont {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+}
+.cont-bd .main-cont .form {
+  position: relative;
+  background-color: #f1f0f0;
+  padding: 40px;
+  overflow: hidden;
+  width: 300px;
+  border-radius: 10px;
+}
+.cont-bd .main-cont .form .form-title {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  width: 180px;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 5px rgba(255, 0, 0, 0.2666666667));
+}
+.cont-bd .main-cont .form .form-title span {
+  margin: auto;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  outline: hidden;
+  font-size: 14px;
+  font-weight: 500px;
+}
+.cont-bd .main-cont .form .form-title .des {
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(to right, #eb5151, #eb5151, #eb960f, #f7bd1e);
+  width: 55px;
+  padding: 18px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+.cont-bd .main-cont .form .icons {
+  position: relative;
+  transform: translate(-50%, 0);
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 135px;
+  height: 50px;
+}
+.cont-bd .main-cont .form .icons .image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  z-index: 4;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #eb5151, #eb5151, #eb960f, #f7bd1e);
+}
+.cont-bd .main-cont .form .icons .image:hover {
+  transform: translatey(-5px);
+}
+.cont-bd .main-cont .form .icons .image img {
+  width: 16px;
+  height: 16px;
+}
+.cont-bd .main-cont .form .icons .facebook {
+  left: 0px;
+}
+.cont-bd .main-cont .form .icons .google {
+  right: 0;
+}
+.cont-bd .main-cont .form .main-forms {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+.cont-bd .main-cont .form .main-forms .auth {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.5;
+}
+.cont-bd .main-cont .form .login-form {
+  position: relative;
+  margin-left: 10px;
+  transition: transform 0.5s;
+  color: green;
+}
+.cont-bd .main-cont .form .login-form .login-input {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: #f1f0f0;
+  border-bottom: 1px solid #7c7a7a;
+}
+.cont-bd .main-cont .form .login-form .login-input::-moz-placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .login-form .login-input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .login-form .login-input::placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .register-form {
+  transition: transform 0.5s;
+  transform: translateX(350px);
+}
+.cont-bd .main-cont .form .register-form .auth {
+  position: absolute;
+  top: 112px;
+  color: green;
+}
+.cont-bd .main-cont .form .register-form .register-input {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: #f1f0f0;
+  border-bottom: 1px solid #7c7a7a;
+}
+.cont-bd .main-cont .form .register-form .register-input::-moz-placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .register-form .register-input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .register-form .register-input::placeholder {
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .terms {
+  color: #626060;
+  font-size: 12px;
+  display: flex;
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+.cont-bd .main-cont .form .terms .add {
+  margin-right: 8px;
+}
+.cont-bd .main-cont .form .register-btn, .cont-bd .main-cont .form .login-btn {
+  display: block;
+  background-color: rgba(255, 157, 0, 0.8392156863);
+  margin: auto;
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+  width: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  border: none;
+  transition: all 2s ease-in-out;
+}
+.cont-bd .main-cont .form .register-btn:hover, .cont-bd .main-cont .form .login-btn:hover {
+  background-image: linear-gradient(to right, #f2a72f, #ea990e, rgba(235, 37, 37, 0.3254901961), rgba(235, 37, 37, 0.2588235294));
+}/*# sourceMappingURL=index.css.map */
