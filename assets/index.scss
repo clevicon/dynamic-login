@@ -4,16 +4,26 @@
 }
 
 body{
+    // min-width:720px;
+    // min-width:720px;
+    // min-width:1500px;
+
     padding: 0;
     margin: 0;
     // font-family: $poppins;
     overflow-y: hidden;
+
+   
+
 }
 
 .cont-bd{
+   
+    
     position: relative;
     font-family: 'Poppins', sans-serif;
-
+    
+    
 
     
     .blur{
@@ -25,11 +35,14 @@ body{
     }
 
     .bacImg{
-        // width: 100%;
+        // width: 300px;
         // height: 400px;
         img{
             width: 100%;
             height: 100vh;
+            object-fit: cover;
+            
+            
         }
     }    
 
@@ -38,7 +51,18 @@ body{
         transform: translate(-50%,-50%);
         top:50%;
         left: 50%;
-        display: flex;
+        // margin: auto;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        @media screen and (max-width:720px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // width: 100%;
+            // background-color: red;
+        }
 
         .form{
             position: relative;
@@ -48,6 +72,12 @@ body{
             overflow: hidden;
             width: 300px;
             border-radius: 10px;
+
+            
+    @media screen and (max-width:720px){
+           width: 250px;
+           
+    }
 
            
             
@@ -85,7 +115,7 @@ body{
                     top: 0;
                     background-image: linear-gradient(to right,#eb5151,#eb5151,#eb960f,#f7bd1e);
                     width:55px;
-                    padding:18px;
+                    padding:20.4px;
                 // transform: translateX(-95px);
                 // transform: translateX(95px);
 
@@ -161,6 +191,7 @@ body{
             .main-forms{
                 display: flex;
                 justify-content: flex-start;
+                
                 align-items: center;
                 margin-top: 20px;
                 // position: relative;
@@ -184,12 +215,22 @@ body{
 
             .login-form{
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                // background-color: red;
                 // margin: auto;
 
-                margin-left: 10px;
+                // margin-left: 10px;
                 transition:transform (0.5s);
                     color: green;
-                // transform: translateX(-300px)
+                
+                     @media screen and (max-width:720px){
+                        
+                        transform: translateX(-10px);
+           
+                    }
                 
                 
                 // .auth{
@@ -217,6 +258,7 @@ body{
                     outline: none;
                     background-color: #f1f0f0;
                     border-bottom: 1px solid #7c7a7a;
+                    // background-color: red;
 
                     &::placeholder{
                         text-transform: capitalize;
@@ -226,8 +268,17 @@ body{
 
             .register-form{
                 // display:none;
+
                 transition:transform (0.5s);
-                transform: translateX(350px);
+                transform: translateX(700px);
+                margin-left: 30px;
+
+                @media screen and (max-width:720px){
+                        
+                    transform: translateX(350px);
+                    margin-left: 0px;
+       
+                }
 
                 
                 .auth{

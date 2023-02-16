@@ -15,15 +15,18 @@ let tes = document.querySelector(".tes");
 
 $(".login").click(function(){
     $(".des").css({"transform":"translateX(0px)"});
-    $(".login-form").css({"transform":"translateX(0px)"});
+    
+    $(".login-form").css({"transform":"translateX(-6px)"});
+    // $(".login-form").css({" @media screen and (min-width:1500px)":"-800px"});
+    
     $(".register-form").css({"transform":"translateX(200px)"});
 
 
 });
 
 $(".register").click(function(){
-    $(".des").css({"transform":"translateX(89px)"});
-    $(".register-form").css({"transform":"translateX(-270px)"});
+    $(".des").css({"transform":"translateX(85px)"});
+    $(".register-form").css({"transform":"translateX(-283px)"});
     $(".login-form").css({"transform":"translateX(-350px)"});
 
 });
